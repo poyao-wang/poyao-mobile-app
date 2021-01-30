@@ -1,10 +1,16 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Button } from "react-native";
 
-function HomeScreen(props) {
+function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Main Screen</Text>
+      <Text>Home Screen</Text>
+      <Button
+        title="ENTER"
+        onPress={() => {
+          navigation.navigate("App");
+        }}
+      />
     </View>
   );
 }
