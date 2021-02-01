@@ -5,6 +5,9 @@ function ContactScreen(props) {
   return (
     <View style={styles.container}>
       <Text>Contact Screen</Text>
+      <Text>Interested in my work? Feel free to contact me.</Text>
+      <Text>My Linkedin Page</Text>
+      <Text>Send Me An Email</Text>
     </View>
   );
 }
