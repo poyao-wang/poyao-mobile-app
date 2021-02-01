@@ -4,7 +4,8 @@ import { View, StyleSheet, Text, Button } from "react-native";
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text>Poyao Wang</Text>
+      <Text>This is the mobile app of Poyao.</Text>
       <Button
         title="ENTER"
         onPress={() => {
