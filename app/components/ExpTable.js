@@ -7,8 +7,8 @@ function ExpTable({ title, data }) {
     <View style={styles.container}>
       <Text>{title}</Text>
       <ExpTableRow rowData={data[1]} />
-      {data.map((rowData) => (
-        <ExpTableRow rowData={rowData} />
+      {data.map((rowData, key) => (
+        <ExpTableRow rowData={rowData} key={key} />
       ))}
     </View>
   );
