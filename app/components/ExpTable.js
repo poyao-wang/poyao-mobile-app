@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import ExpTableRow from "./ExpTableRow";
+import Text from "./Text";
 
 function ExpTable({ title, data }) {
   return (

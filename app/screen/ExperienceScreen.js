@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import ExpTable from "../components/ExpTable";
+import Text from "../components/Text";
 
 function ExperienceScreen(props) {
   const data = {

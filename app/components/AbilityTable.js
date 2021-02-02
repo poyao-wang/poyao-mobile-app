@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import AbilityTableRow from "./AbilityTableRow";
+import Text from "./Text";
 
 function AbilityTable({ title, data }) {
   return (

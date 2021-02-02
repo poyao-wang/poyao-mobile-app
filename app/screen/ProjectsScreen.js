@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import ProjectTable from "../components/ProjectTable";
+import Text from "../components/Text";
 
 function ProjectsScreen(props) {
   const data = {

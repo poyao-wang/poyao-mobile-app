@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import ProjectTableRow from "./ProjectTableRow";
+import Text from "./Text";
 
 function ProjectTable({ title, data }) {
   return (

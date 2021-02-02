@@ -1,5 +1,6 @@
 import React from "react";
-import { View, StyleSheet, Text, Button } from "react-native";
+import { View, StyleSheet, Button } from "react-native";
+import Text from "../components/Text";
 
 function HomeScreen({ navigation }) {
   return (

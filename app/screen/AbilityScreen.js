@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 import AbilityTable from "../components/AbilityTable";
+import Text from "../components/Text";
 
 function AbilityScreen(props) {
   const data = {
