@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import ProjectTable from "../components/ProjectTable";
 import Text from "../components/Text";
+import TextH1 from "../components/TextH1";
 
 function ProjectsScreen(props) {
   const data = {
@@ -29,7 +30,7 @@ function ProjectsScreen(props) {
 
   return (
     <View style={styles.container}>
-      <Text>Projects Screen</Text>
+      <TextH1>Projects</TextH1>
       <ProjectTable data={data.cards} />
     </View>
   );

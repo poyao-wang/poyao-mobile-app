@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import ExpTable from "../components/ExpTable";
 import Text from "../components/Text";
+import TextH1 from "../components/TextH1";
 
 function ExperienceScreen(props) {
   const data = {
@@ -75,7 +76,7 @@ function ExperienceScreen(props) {
 
   return (
     <View style={styles.container}>
-      <Text>Experience Screen</Text>
+      <TextH1>Experience Screen</TextH1>
       <ExpTable title="Careers" data={data.careers} />
       <ExpTable title="Educations" data={data.educations} />
     </View>

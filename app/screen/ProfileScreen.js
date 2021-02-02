@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import Text from "../components/Text";
+import TextH1 from "../components/TextH1";
 
 function ProfileScreen(props) {
   const thisYear = new Date();
@@ -8,7 +9,7 @@ function ProfileScreen(props) {
 
   return (
     <View style={styles.container}>
-      <Text>Profile</Text>
+      <TextH1>Profile</TextH1>
       <Text>A Self-Taught Programmer.</Text>
       <Text>About me</Text>
       <Text>

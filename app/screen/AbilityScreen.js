@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import AbilityTable from "../components/AbilityTable";
 import Text from "../components/Text";
+import TextH1 from "../components/TextH1";
 
 function AbilityScreen(props) {
   const data = {
@@ -39,7 +40,7 @@ function AbilityScreen(props) {
 
   return (
     <View style={styles.container}>
-      <Text>Ability Screen</Text>
+      <TextH1>Ability</TextH1>
       <AbilityTable title="Skills" data={data.skills} />
       <AbilityTable title="languages" data={data.languages} />
       <AbilityTable title="tools" data={data.tools} />

@@ -1,11 +1,12 @@
 import React from "react";
 import { View, StyleSheet, Button } from "react-native";
 import Text from "../components/Text";
+import TextH1 from "../components/TextH1";
 
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Poyao Wang</Text>
+      <TextH1>Poyao Wang</TextH1>
       <Text>This is the mobile app of Poyao.</Text>
       <Button
         title="ENTER"
