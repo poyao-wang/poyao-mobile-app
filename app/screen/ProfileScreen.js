@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../components/Text";
 import ScreenForApp from "../components/ScreenForApp";
 import { View, StyleSheet, Image } from "react-native";
-import TextH2 from "../components/TextH2";
+import TextH3 from "../components/TextH3";
 
 function ProfileScreen(props) {
   const data = {
@@ -26,7 +26,7 @@ function ProfileScreen(props) {
           source={require("../assets/me2.jpeg")}
           style={styles.myPicture}
         />
-        <TextH2>Details</TextH2>
+        <TextH3>Details</TextH3>
         <Text style={styles.myName}>Poyao Wang</Text>
         {data.details.map((rowData, key) => (
           <React.Fragment key={key}>
