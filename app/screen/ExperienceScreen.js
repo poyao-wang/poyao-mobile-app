@@ -11,7 +11,7 @@ function ExperienceScreen(props) {
         subInst: "School of Engineering",
         hrefText: "https://www.eng.osaka-u.ac.jp/en",
         jobTitle: "Sphecial Researcher",
-        time: "2010-2011",
+        time: "2010 - 2011",
         cont:
           "Takeishi and Komiyama's Laboratory. FrontierLab Program Fall 2010. " +
           "Gas turbine film cooling research.",
@@ -21,7 +21,7 @@ function ExperienceScreen(props) {
         subInst: "School of Engineering",
         hrefText: "http://pme.site.nthu.edu.tw/index.php?Lang=en",
         jobTitle: "Power of Mechanical Engineering",
-        time: "2006-2011",
+        time: "2006 - 2011",
         cont: "Bachelor's degree. Thermo-Fluids Engineering Division",
       },
     ],
