@@ -6,7 +6,7 @@ import Text from "./Text";
 
 function TextH3({ style, children, ...otherProps }) {
   return (
-    <Text style={[defaultStyles.text, style, styles.h3]} {...otherProps}>
+    <Text style={[defaultStyles.text, styles.h3, style]} {...otherProps}>
       {children}
     </Text>
   );

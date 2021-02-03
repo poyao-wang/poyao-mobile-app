@@ -6,7 +6,7 @@ import Text from "./Text";
 
 function TextH4({ style, children, ...otherProps }) {
   return (
-    <Text style={[defaultStyles.text, style, styles.h4]} {...otherProps}>
+    <Text style={[defaultStyles.text, styles.h4, style]} {...otherProps}>
       {children}
     </Text>
   );
