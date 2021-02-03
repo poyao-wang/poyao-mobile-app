@@ -28,7 +28,6 @@ function ProfileScreen(props) {
           source={require("../assets/me2.jpeg")}
           style={styles.myPicture}
         />
-        <TextH3>Details</TextH3>
         <TextH4>Poyao Wang</TextH4>
         {data.details.map((rowData, key) => (
           <React.Fragment key={key}>
