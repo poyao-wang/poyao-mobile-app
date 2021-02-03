@@ -3,6 +3,8 @@ import Text from "../components/Text";
 import ScreenForApp from "../components/ScreenForApp";
 import { View, StyleSheet, Image } from "react-native";
 import TextH3 from "../components/TextH3";
+import TextH5 from "../components/TextH5";
+import TextH4 from "../components/TextH4";
 
 function ProfileScreen(props) {
   const data = {
@@ -20,14 +22,14 @@ function ProfileScreen(props) {
   return (
     <ScreenForApp mainTitle="Profile">
       <View style={styles.content}>
-        <Text style={styles.oneLineMsg}>{data.oneLineMsg}</Text>
+        <TextH5 style={styles.oneLineMsg}>{data.oneLineMsg}</TextH5>
         <Text>{data.aboutMe}</Text>
         <Image
           source={require("../assets/me2.jpeg")}
           style={styles.myPicture}
         />
         <TextH3>Details</TextH3>
-        <Text style={styles.myName}>Poyao Wang</Text>
+        <TextH4>Poyao Wang</TextH4>
         {data.details.map((rowData, key) => (
           <React.Fragment key={key}>
             <Text style={styles.detailTitle}>{rowData.title}</Text>
@@ -53,13 +55,9 @@ const styles = StyleSheet.create({
     marginVertical: 25,
     width: 200,
   },
-  myName: {
-    fontSize: 25,
-  },
+
   oneLineMsg: {
-    fontSize: 20,
     marginBottom: 7,
-    fontWeight: "500",
   },
 });
 
