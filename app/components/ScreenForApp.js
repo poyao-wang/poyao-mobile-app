@@ -7,7 +7,11 @@ function ScreenForApp({ mainTitle, children }) {
   return (
     <Screen style={styles.screen}>
       <TextH1>{mainTitle}</TextH1>
-      <ScrollView style={styles.content} bounces="false">
+      <ScrollView
+        style={styles.content}
+        contentContainerStyle={styles.contentContainer}
+        bounces="false"
+      >
         {children}
       </ScrollView>
     </Screen>
@@ -20,6 +24,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     width: "100%",
+  },
+  contentContainer: {
+    paddingBottom: 20,
   },
 });
 export default ScreenForApp;
