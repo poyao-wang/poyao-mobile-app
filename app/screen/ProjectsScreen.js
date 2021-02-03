@@ -1,8 +1,7 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+
 import ProjectTable from "../components/ProjectTable";
-import Text from "../components/Text";
-import TextH1 from "../components/TextH1";
+import Screen from "../components/ScreenForApp";
 
 function ProjectsScreen(props) {
   const data = {
@@ -29,19 +28,10 @@ function ProjectsScreen(props) {
   };
 
   return (
-    <View style={styles.container}>
-      <TextH1>Projects</TextH1>
+    <Screen mainTitle="Projects">
       <ProjectTable data={data.cards} />
-    </View>
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
 
 export default ProjectsScreen;

@@ -1,8 +1,7 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+
 import ExpTable from "../components/ExpTable";
-import Text from "../components/Text";
-import TextH1 from "../components/TextH1";
+import ScreenForApp from "../components/ScreenForApp";
 
 function ExperienceScreen(props) {
   const data = {
@@ -75,20 +74,11 @@ function ExperienceScreen(props) {
   };
 
   return (
-    <View style={styles.container}>
-      <TextH1>Experience Screen</TextH1>
+    <ScreenForApp mainTitle="Experience">
       <ExpTable title="Careers" data={data.careers} />
       <ExpTable title="Educations" data={data.educations} />
-    </View>
+    </ScreenForApp>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
 
 export default ExperienceScreen;

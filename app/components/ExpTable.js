@@ -1,11 +1,11 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import ExpTableRow from "./ExpTableRow";
 import Text from "./Text";
 
 function ExpTable({ title, data }) {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>{title}</Text>
       <ExpTableRow rowData={data[1]} />
       {data.map((rowData, key) => (
@@ -15,7 +15,4 @@ function ExpTable({ title, data }) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {},
-});
 export default ExpTable;

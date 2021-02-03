@@ -1,8 +1,8 @@
+import { StyleSheet, ScrollView } from "react-native";
 import React from "react";
-import { View, StyleSheet } from "react-native";
+
 import AbilityTable from "../components/AbilityTable";
-import Text from "../components/Text";
-import TextH1 from "../components/TextH1";
+import Screen from "../components/ScreenForApp";
 
 function AbilityScreen(props) {
   const data = {
@@ -39,21 +39,14 @@ function AbilityScreen(props) {
   };
 
   return (
-    <View style={styles.container}>
-      <TextH1>Ability</TextH1>
+    <Screen mainTitle="Ability">
       <AbilityTable title="Skills" data={data.skills} />
       <AbilityTable title="languages" data={data.languages} />
       <AbilityTable title="tools" data={data.tools} />
-    </View>
+    </Screen>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+const styles = StyleSheet.create({});
 
 export default AbilityScreen;

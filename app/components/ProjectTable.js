@@ -1,11 +1,12 @@
+import { View } from "react-native";
 import React from "react";
-import { View, StyleSheet } from "react-native";
+
 import ProjectTableRow from "./ProjectTableRow";
 import Text from "./Text";
 
 function ProjectTable({ title, data }) {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>{title}</Text>
       <ProjectTableRow rowData={data[1]} />
       {data.map((rowData, key) => (
@@ -15,7 +16,4 @@ function ProjectTable({ title, data }) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {},
-});
 export default ProjectTable;
