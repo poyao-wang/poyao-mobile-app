@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView } from "react-native";
+import { StyleSheet, View } from "react-native";
 import React from "react";
 
 import AbilityTable from "../components/AbilityTable";
@@ -40,13 +40,20 @@ function AbilityScreen(props) {
 
   return (
     <Screen mainTitle="Ability">
-      <AbilityTable title="Skills" data={data.skills} />
-      <AbilityTable title="languages" data={data.languages} />
-      <AbilityTable title="tools" data={data.tools} />
+      <View style={styles.container}>
+        <AbilityTable title="Skills" data={data.skills} />
+        <View style={styles.margin} />
+        <AbilityTable title="Languages" data={data.languages} />
+        <View style={styles.margin} />
+        <AbilityTable title="Tools" data={data.tools} />
+      </View>
     </Screen>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: { alignItems: "center" },
+  margin: { height: 10, width: "100%" },
+});
 
 export default AbilityScreen;
