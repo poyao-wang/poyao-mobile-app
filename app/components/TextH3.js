@@ -6,14 +6,14 @@ import Text from "./Text";
 
 function TextH3({ style, children, ...otherProps }) {
   return (
-    <Text style={[defaultStyles.text, style, styles.h2]} {...otherProps}>
+    <Text style={[defaultStyles.text, style, styles.h3]} {...otherProps}>
       {children}
     </Text>
   );
 }
 
 const styles = StyleSheet.create({
-  h2: {
+  h3: {
     fontSize: 30,
     color: defaultStyles.colors.primary,
     paddingVertical: 5,

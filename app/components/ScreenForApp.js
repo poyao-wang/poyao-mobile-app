@@ -1,12 +1,12 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import TextH1 from "./TextH1";
+import TextH2 from "./TextH2";
 import Screen from "./Screen";
 
 function ScreenForApp({ mainTitle, children }) {
   return (
     <Screen style={styles.screen}>
-      <TextH1>{mainTitle}</TextH1>
+      <TextH2>{mainTitle}</TextH2>
       <ScrollView
         style={styles.content}
         contentContainerStyle={styles.contentContainer}
