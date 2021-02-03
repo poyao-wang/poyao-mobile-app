@@ -1,13 +1,12 @@
 import React from "react";
 import { View } from "react-native";
 import ExpTableRow from "./ExpTableRow";
-import Text from "./Text";
+import TextH3 from "./TextH3";
 
 function ExpTable({ title, data }) {
   return (
     <View>
-      <Text>{title}</Text>
-      <ExpTableRow rowData={data[1]} />
+      <TextH3>{title}</TextH3>
       {data.map((rowData, key) => (
         <ExpTableRow rowData={rowData} key={key} />
       ))}
