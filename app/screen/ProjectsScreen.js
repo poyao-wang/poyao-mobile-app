@@ -7,7 +7,7 @@ function ProjectsScreen(props) {
   const data = {
     cards: [
       {
-        imgSrc: "assets/Project1.jpg",
+        imgSrc: "https://boyo-web-app.appspot.com/assets/Project1.jpg",
         cardTitleText: "This web app / ReactJS",
         cardText:
           "This webpage is built by reactJS, combined with " +
@@ -16,7 +16,7 @@ function ProjectsScreen(props) {
         btnText: "Github link",
       },
       {
-        imgSrc: "assets/Project2.jpg",
+        imgSrc: "https://boyo-web-app.appspot.com/assets/Project2.jpg",
         cardTitleText: "Raspberry Pi / Python",
         cardText:
           "A motor controller, built on Raspberry Pi, " +

@@ -8,7 +8,6 @@ function ProjectTable({ title, data }) {
   return (
     <View>
       <Text>{title}</Text>
-      <ProjectTableRow rowData={data[1]} />
       {data.map((rowData, key) => (
         <ProjectTableRow rowData={rowData} key={key} />
       ))}
