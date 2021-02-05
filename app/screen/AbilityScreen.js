@@ -7,34 +7,36 @@ import Screen from "../components/ScreenForApp";
 function AbilityScreen(props) {
   const data = {
     skills: [
-      { name: "JavaScript", rate: 4 },
-      { name: "ReactJS", rate: 3 },
-      { name: "Python", rate: 3 },
-      { name: "Bootstrap", rate: 3 },
-      { name: "HTML", rate: 3 },
-      { name: "CSS", rate: 3 },
-      { name: "VBA", rate: 3 },
-      { name: "node.js", rate: 3 },
-      { name: "Cmd lines", rate: 2 },
-      { name: "Google Cloud", rate: 2 },
+      { name: "JavaScript", iconName: "language-javascript", rate: 4 },
+      { name: "ReactJS", iconName: "react", rate: 4 },
+      { name: "React Native", iconName: "react", rate: 4 },
+      { name: "node.js", iconName: "nodejs", rate: 4 },
+      { name: "Bootstrap", iconName: "bootstrap", rate: 3 },
+      { name: "HTML", iconName: "language-html5", rate: 3 },
+      { name: "CSS", iconName: "language-css3", rate: 3 },
+      { name: "Python", iconName: "language-python", rate: 3 },
+      { name: "VBA", iconName: "file-excel-box", rate: 3 },
+      { name: "Git / Github", iconName: "git", rate: 3 },
+      { name: "MongoDb", iconName: "database", rate: 3 },
+      { name: "Cmd lines", iconName: "code-greater-than", rate: 2 },
     ],
     languages: [
-      { name: "Chinese", rate: 5 },
-      { name: "English", rate: 4 },
-      { name: "Japanese", rate: 4 },
-      { name: "German", rate: 1 },
+      { name: "Chinese", iconName: "alpha-c-box", rate: 5 },
+      { name: "English", iconName: "alpha-e-box", rate: 4 },
+      { name: "Japanese", iconName: "alpha-j-box", rate: 4 },
+      { name: "German", iconName: "alpha-g-box", rate: 1 },
     ],
     tools: [
-      { name: "MS Office", rate: 5 },
-      { name: "Mac", rate: 5 },
-      { name: "Windows", rate: 5 },
-      { name: "MS VSCode", rate: 3 },
-      { name: "Adobe Ai", rate: 3 },
-      { name: "Adobe Ps", rate: 3 },
-      { name: "Fusion 360", rate: 3 },
-      { name: "Google Drive", rate: 3 },
-      { name: "Raspberry Pi", rate: 3 },
-      { name: "Git / Github", rate: 2 },
+      { name: "Mac", iconName: "apple", rate: 5 },
+      { name: "Windows", iconName: "microsoft", rate: 5 },
+      { name: "MS Office", iconName: "microsoft-office", rate: 5 },
+      { name: "VSCode", iconName: "microsoft-visual-studio-code", rate: 3 },
+      { name: "Google Drive", iconName: "google-drive", rate: 3 },
+      { name: "Google Cloud", iconName: "cloud", rate: 2 },
+      { name: "Adobe Ai", iconName: "adobe", rate: 3 },
+      { name: "Adobe Ps", iconName: "adobe", rate: 3 },
+      { name: "Fusion 360", iconName: "file-cad", rate: 3 },
+      { name: "Raspberry Pi", iconName: "raspberry-pi", rate: 3 },
     ],
   };
 
@@ -43,9 +45,10 @@ function AbilityScreen(props) {
       <View style={styles.container}>
         <AbilityTable title="Skills" data={data.skills} />
         <View style={styles.margin} />
+        <AbilityTable title="Tools" data={data.tools} />
+        <View style={styles.margin} />
         <AbilityTable title="Languages" data={data.languages} />
         <View style={styles.margin} />
-        <AbilityTable title="Tools" data={data.tools} />
       </View>
     </Screen>
   );

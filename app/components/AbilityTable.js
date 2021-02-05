@@ -1,16 +1,21 @@
 import { View, StyleSheet } from "react-native";
 import React from "react";
 
-import AbilityTableRow from "./AbilityTableRow";
 import Text from "./Text";
 import TextH3 from "./TextH3";
+import IconForAbility from "./IconForAbility";
 function AbilityTable({ title, data }) {
   return (
     <>
       <TextH3>{title}</TextH3>
       <View style={styles.content}>
         {data.map((rowData, key) => (
-          <AbilityTableRow rowData={rowData} key={key} />
+          <IconForAbility
+            key={key}
+            textBelow={rowData.name}
+            rate={rowData.rate}
+            icnoName={rowData.iconName}
+          />
         ))}
       </View>
     </>
@@ -19,9 +24,9 @@ function AbilityTable({ title, data }) {
 
 const styles = StyleSheet.create({
   content: {
-    alignSelf: "center",
-    justifyContent: "center",
-    width: "80%",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   },
 });
 export default AbilityTable;
