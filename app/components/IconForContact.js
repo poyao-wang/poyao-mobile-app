@@ -13,7 +13,9 @@ function IconForContact({
 }) {
   return (
     <TouchableOpacity onPress={onPress} style={[style, styles.container]}>
-      <MaterialCommunityIcons name={icnoName} size={size} color={color} />
+      <View style={styles.iconWrapper}>
+        <MaterialCommunityIcons name={icnoName} size={size} color={color} />
+      </View>
       <Text style={styles.textBelow}>{textBelow}</Text>
     </TouchableOpacity>
   );
@@ -25,6 +27,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: 150,
     height: 150,
+  },
+  iconWrapper: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: 90,
+    height: 80,
   },
   textBelow: {
     fontSize: 15,
