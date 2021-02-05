@@ -7,6 +7,7 @@ import Text from "./Text";
 import TextH3 from "./TextH3";
 import IconForAbility from "./IconForAbility";
 import colors from "../config/colors";
+import ButtonShowHide from "./ButtonShowHide";
 
 function AbilityTable({ title, data }) {
   const dataDefaultShow = data.filter((obj) => obj.default);
@@ -42,22 +43,11 @@ function AbilityTable({ title, data }) {
           </React.Fragment>
         )}
       </View>
-      {!contShow && (
-        <MaterialCommunityIcons
-          name="chevron-double-down"
-          color={colors.medium}
-          size={30}
-          onPress={contShowPress}
-        />
-      )}
-      {contShow && (
-        <MaterialCommunityIcons
-          name="chevron-double-up"
-          color={colors.medium}
-          size={30}
-          onPress={contShowPress}
-        />
-      )}
+      <ButtonShowHide
+        style={styles.showHideBtn}
+        down={!contShow}
+        onPress={contShowPress}
+      />
     </>
   );
 }
@@ -67,6 +57,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
+  },
+  showHideBtn: {
+    marginTop: 10,
   },
 });
 export default AbilityTable;

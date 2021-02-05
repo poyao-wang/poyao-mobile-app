@@ -7,6 +7,7 @@ import Text from "./Text";
 import TextH4 from "./TextH4";
 import TextH5 from "./TextH5";
 import colors from "../config/colors";
+import ButtonShowHide from "./ButtonShowHide";
 
 function ExpTableRow({ rowData }) {
   const [contShow, setContShow] = useState(false);
@@ -30,22 +31,7 @@ function ExpTableRow({ rowData }) {
           <Text style={styles.time} onPress={contShowPress}>
             {rowData.time}
           </Text>
-          {!contShow && (
-            <MaterialCommunityIcons
-              name="chevron-double-down"
-              color={colors.dark}
-              size={20}
-              onPress={contShowPress}
-            />
-          )}
-          {contShow && (
-            <MaterialCommunityIcons
-              name="chevron-double-up"
-              color={colors.dark}
-              size={20}
-              onPress={contShowPress}
-            />
-          )}
+          <ButtonShowHide down={!contShow} onPress={contShowPress} size={20} />
         </View>
         {contShow && (
           <View style={styles.contAndSubInst}>
