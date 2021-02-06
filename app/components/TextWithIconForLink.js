@@ -29,7 +29,7 @@ function TextWithIconForLink({ url, text, style }) {
           animation={blink}
           duration={300}
           iterationDelay={4000}
-          iterationCount={3}
+          iterationCount="infinite"
           onPress={() => {
             linkPress(url);
           }}

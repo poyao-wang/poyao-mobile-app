@@ -15,7 +15,7 @@ function ExpTableRow({ rowData }) {
   const [contShow, setContShow] = useState(false);
 
   const linkPress = (url) => {
-    Linking.openURL(url);
+    if (url) Linking.openURL(url);
   };
 
   const contShowPress = () => {

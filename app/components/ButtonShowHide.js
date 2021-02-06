@@ -16,7 +16,7 @@ function ButtonShowHide({
       opacity: 0,
       translateY: -7,
     },
-    0.3: {
+    0.2: {
       opacity: 1,
       translateY: 0,
     },
@@ -30,7 +30,7 @@ function ButtonShowHide({
       opacity: 0,
       translateY: 7,
     },
-    0.3: {
+    0.2: {
       opacity: 1,
       translateY: 0,
     },
@@ -55,10 +55,9 @@ function ButtonShowHide({
   return (
     <Animatable.View
       style={[styles.container, style]}
-      // animation={down ? fadeInDown : fadeInUp}
-      animation={pulse}
-      duration={1500}
-      iterationDelay={1500}
+      animation={down ? fadeInDown : fadeInUp}
+      // animation={pulse}
+      duration={3000}
       iterationCount="infinite"
     >
       {down && (
