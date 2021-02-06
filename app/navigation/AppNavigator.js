@@ -7,12 +7,18 @@ import ContactScreen from "../screen/ContactScreen";
 import ExperienceScreen from "../screen/ExperienceScreen";
 import ProfileScreen from "../screen/ProfileScreen";
 import ProjectsScreen from "../screen/ProjectsScreen";
+import colors from "../config/colors";
 
 const Tab = createBottomTabNavigator();
 
 function AppNavigator() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      tabBarOptions={{
+        activeTintColor: colors.primary,
+        style: { height: 90 },
+      }}
+    >
       <Tab.Screen
         name="Profile"
         options={{
