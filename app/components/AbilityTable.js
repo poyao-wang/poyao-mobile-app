@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
+    width: "100%",
   },
   showHideBtn: {
     marginTop: 10,

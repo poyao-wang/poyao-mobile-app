@@ -57,14 +57,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: 110,
     height: 110,
-    // borderWidth: 2,
   },
   iconWrapper: {
     justifyContent: "center",
     alignItems: "center",
     width: 60,
     height: 60,
-    // borderWidth: 2,
   },
   starContainer: {
     flexDirection: "row-reverse",

@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import { View, StyleSheet } from "react-native";
-import * as Linking from "expo-linking";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { View, StyleSheet } from "react-native";
+import * as Animatable from "react-native-animatable";
+import * as Linking from "expo-linking";
+import React, { useState } from "react";
 
+import ButtonShowHide from "./ButtonShowHide";
+import colors from "../config/colors";
+import TextWithIconForLink from "./TextWithIconForLink";
 import Text from "./Text";
 import TextH4 from "./TextH4";
 import TextH5 from "./TextH5";
-import colors from "../config/colors";
-import ButtonShowHide from "./ButtonShowHide";
 
 function ExpTableRow({ rowData }) {
   const [contShow, setContShow] = useState(false);
@@ -27,30 +29,25 @@ function ExpTableRow({ rowData }) {
         <TextH5 style={styles.jobTitle} onPress={contShowPress}>
           {rowData.jobTitle}
         </TextH5>
-        <View style={styles.jobTitleAndIcon}>
-          <Text style={styles.time} onPress={contShowPress}>
-            {rowData.time}
-          </Text>
-          <ButtonShowHide down={!contShow} onPress={contShowPress} size={20} />
-        </View>
+        <Text style={styles.time} onPress={contShowPress}>
+          {rowData.time}{" "}
+          <ButtonShowHide
+            style={{ alignSelf: "center" }}
+            down={!contShow}
+            onPress={contShowPress}
+            size={20}
+          />
+        </Text>
         {contShow && (
-          <View style={styles.contAndSubInst}>
+          <View style={styles.contAndLink}>
             <Text onPress={contShowPress}>{rowData.cont}</Text>
-            {rowData.hrefText && (
-              <View style={styles.subInst}>
-                <MaterialCommunityIcons
-                  name="link"
-                  color={colors.primary}
-                  size={20}
-                />
-                <Text
-                  style={styles.subInstWithLink}
-                  onPress={() => linkPress(rowData.hrefText)}
-                >
-                  {rowData.subInst}
-                </Text>
-              </View>
-            )}
+            <TextWithIconForLink
+              text={rowData.subInst}
+              url={rowData.hrefText}
+              onPress={() => {
+                linkPress(rowData.hrefText);
+              }}
+            />
           </View>
         )}
       </View>
@@ -63,7 +60,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     marginBottom: 20,
   },
-  contAndSubInst: {
+  contAndLink: {
     paddingTop: 10,
   },
   instText: {
@@ -73,12 +70,10 @@ const styles = StyleSheet.create({
   jobTitle: {
     fontSize: 20,
     fontWeight: "500",
-    marginRight: 5,
   },
-  jobTitleAndIcon: {
+  timeAndIcon: {
     paddingTop: 10,
-    flexDirection: "row",
-    alignItems: "center",
+    justifyContent: "center",
   },
   jobDetailView: {
     paddingLeft: 10,
@@ -91,15 +86,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
 
-  subInstWithLink: {
+  link: {
     color: colors.primary,
+    borderWidth: 2,
     fontSize: 15,
-    textDecorationLine: "underline",
-    paddingLeft: 5,
+    width: 50,
   },
   time: {
     fontSize: 15,
-    paddingRight: 10,
   },
 });
 export default ExpTableRow;
