@@ -5,6 +5,7 @@ import TextH3 from "./TextH3";
 import * as Linking from "expo-linking";
 import colors from "../config/colors";
 import TextH4 from "./TextH4";
+import TextH5 from "./TextH5";
 
 function ProjectTableRow({ rowData }) {
   const linkPress = (url) => {
@@ -15,7 +16,7 @@ function ProjectTableRow({ rowData }) {
     <View style={styles.card}>
       <Image source={{ uri: rowData.imgSrc }} style={styles.myPicture} />
       <View style={styles.container}>
-        <TextH4>{rowData.cardTitleText}</TextH4>
+        <TextH5 style={styles.jobTitle}>{rowData.cardTitleText}</TextH5>
         <Text>{rowData.cardText}</Text>
         <Button
           title={rowData.btnText}
@@ -36,9 +37,11 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     overflow: "hidden",
   },
+  jobTitle: { fontSize: 25, fontWeight: "500", marginRight: 5 },
   myPicture: {
-    height: 250,
-    width: "100%",
+    resizeMode: "cover",
+    flex: 1,
+    aspectRatio: 4 / 3, // Your aspect ratio
   },
   container: {
     padding: 10,
