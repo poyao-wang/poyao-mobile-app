@@ -50,8 +50,8 @@ function ProjectTableRow({ rowData }) {
             }}
           >
             <Text style={styles.githubLinkBtnText}>
-              <MaterialCommunityIcons name="github" size={24} />
-              {" GitHub Link"}
+              <MaterialCommunityIcons name="github" size={24} />{" "}
+              {rowData.btnText}
             </Text>
           </TouchableOpacity>
         </Animatable.View>

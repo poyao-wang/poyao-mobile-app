@@ -45,19 +45,9 @@ function AppNavigator({ sourceData }) {
       {tabScreen("Ability", "school", (props) => (
         <AbilityScreen {...props} sourceData={sourceData} />
       ))}
-      <Tab.Screen
-        name="Projects"
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons //
-              name="folder-multiple"
-              color={color}
-              size={size}
-            />
-          ),
-        }}
-        component={ProjectsScreen}
-      />
+      {tabScreen("Projects", "folder-multiple", (props) => (
+        <ProjectsScreen {...props} sourceData={sourceData} />
+      ))}
       <Tab.Screen
         name="Contact"
         options={{

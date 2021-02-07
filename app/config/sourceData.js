@@ -167,6 +167,28 @@ export default {
         ],
       },
     },
+    projects: {
+      cards: [
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project1.jpg",
+          cardTitleText: "My web app / ReactJS",
+          cardText:
+            "This webpage is built by reactJS, combined with " +
+            "Bootstrap, and deployed on Google Cloud.",
+          btnLink: "https://github.com/BoyoWang/my-web-app",
+          btnText: "Github",
+        },
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project2.jpg",
+          cardTitleText: "Raspberry Pi / Python",
+          cardText:
+            "A motor controller, built on Raspberry Pi, " +
+            "coding in Python, using Tkinter as GUI.",
+          btnLink: "https://github.com/BoyoWang/control-box",
+          btnText: "Github",
+        },
+      ],
+    },
   },
   cht: {
     home: {
@@ -332,6 +354,26 @@ export default {
           { name: "德　文", iconName: "alpha-g-box", default: false, rate: 1 },
         ],
       },
+    },
+    projects: {
+      cards: [
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project1.jpg",
+          cardTitleText: "我的網頁 App / ReactJS",
+          cardText:
+            "這個網頁使用 ReactJS，並結合 Bootstrap，上傳於 Google Cloud 雲端伺服器。",
+          btnLink: "https://github.com/BoyoWang/my-web-app",
+          btnText: "Github 連結",
+        },
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project2.jpg",
+          cardTitleText: "Raspberry Pi / Python",
+          cardText:
+            "這是一個馬達控制器，使用 Raspberry Pi 為硬體介面，控制邏輯由 Python 寫成，並結合使用者介面 Tkinter 函式庫。",
+          btnLink: "https://github.com/BoyoWang/control-box",
+          btnText: "Github 連結",
+        },
+      ],
     },
   },
   jpn: {
@@ -505,6 +547,26 @@ export default {
           },
         ],
       },
+    },
+    projects: {
+      cards: [
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project1.jpg",
+          cardTitleText: "マイウェブアプリ / ReactJS",
+          cardText:
+            "このウェブサイトは ReactJS で作った。Bootstrap と組み合わせ、GoogleCloud にデプロイされた。",
+          btnLink: "https://github.com/BoyoWang/my-web-app",
+          btnText: "Github リンク",
+        },
+        {
+          imgSrc: "https://boyo-web-app.appspot.com/assets/Project2.jpg",
+          cardTitleText: "Raspberry Pi / Python",
+          cardText:
+            "Raspberry Pi をハードウェアにしたモーターコントローラー。Python によりコントロールロジックを作成し、Tkinter で GUI を作った。",
+          btnLink: "https://github.com/BoyoWang/control-box",
+          btnText: "Github リンク",
+        },
+      ],
     },
   },
 };
