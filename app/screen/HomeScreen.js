@@ -7,31 +7,36 @@ import IconForLanguage from "../components/IconForLanguage";
 import Text from "../components/Text";
 import TextH2 from "../components/TextH2";
 
-function HomeScreen({ navigation }) {
+function HomeScreen({ navigation, sourceData }) {
+  const data = sourceData.data.home;
   return (
     <View style={styles.container}>
-      <TextH2>Poyao Wang</TextH2>
-      <Text style={{ fontSize: 20, margin: 10 }}>
-        This is the mobile app of Poyao.
-      </Text>
+      <TextH2>{data.title}</TextH2>
+      <Text style={{ fontSize: 20, margin: 10 }}>{data.subTitle}</Text>
       <View style={{ flexDirection: "row" }}>
         <IconForLanguage
           textBelow="English"
           icnoName="alpha-e-box"
           color={colors.medium}
-          onPress={() => {}}
+          onPress={() => {
+            sourceData.setLanguage("eng");
+          }}
         />
         <IconForLanguage
           textBelow="Chinese"
           icnoName="alpha-c-box"
           color={colors.medium}
-          onPress={() => {}}
+          onPress={() => {
+            sourceData.setLanguage("cht");
+          }}
         />
         <IconForLanguage
           textBelow="Japanese"
           icnoName="alpha-j-box"
           color={colors.medium}
-          onPress={() => {}}
+          onPress={() => {
+            sourceData.setLanguage("jpn");
+          }}
         />
       </View>
       <Animatable.View
@@ -53,7 +58,7 @@ function HomeScreen({ navigation }) {
           }}
         >
           <Text style={{ fontSize: 25, color: colors.white }}>
-            {"E N T E R"}
+            {data.buttonTitle}
           </Text>
         </TouchableOpacity>
       </Animatable.View>
