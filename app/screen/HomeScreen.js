@@ -1,9 +1,11 @@
-import React from "react";
 import { View, StyleSheet, Button, TouchableOpacity } from "react-native";
+import * as Animatable from "react-native-animatable";
+import React from "react";
+
+import colors from "../config/colors";
+import IconForLanguage from "../components/IconForLanguage";
 import Text from "../components/Text";
 import TextH2 from "../components/TextH2";
-import * as Animatable from "react-native-animatable";
-import colors from "../config/colors";
 
 function HomeScreen({ navigation }) {
   return (
@@ -12,6 +14,26 @@ function HomeScreen({ navigation }) {
       <Text style={{ fontSize: 20, margin: 10 }}>
         This is the mobile app of Poyao.
       </Text>
+      <View style={{ flexDirection: "row" }}>
+        <IconForLanguage
+          textBelow="English"
+          icnoName="alpha-e-box"
+          color={colors.medium}
+          onPress={() => {}}
+        />
+        <IconForLanguage
+          textBelow="Chinese"
+          icnoName="alpha-c-box"
+          color={colors.medium}
+          onPress={() => {}}
+        />
+        <IconForLanguage
+          textBelow="Japanese"
+          icnoName="alpha-j-box"
+          color={colors.medium}
+          onPress={() => {}}
+        />
+      </View>
       <Animatable.View
         animation="pulse"
         duration={500}
