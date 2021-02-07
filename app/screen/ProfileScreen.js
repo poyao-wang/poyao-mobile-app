@@ -6,18 +6,8 @@ import TextH3 from "../components/TextH3";
 import TextH5 from "../components/TextH5";
 import TextH4 from "../components/TextH4";
 
-function ProfileScreen(props) {
-  const data = {
-    oneLineMsg: "A Self-Taught Programmer",
-    aboutMe:
-      "I am a mechanical engineer. Working in automobile industry. I started stydying programming since 2019.",
-    details: [
-      { title: "Age :", content: "33 years" },
-      { title: "Location :", content: "Tokyo, Japan" },
-    ],
-  };
-  const thisYear = new Date();
-  const myAge = thisYear.getFullYear() - 1988;
+function ProfileScreen({ sourceData }) {
+  const data = sourceData.data.profile;
 
   return (
     <ScreenForApp mainTitle="Profile">
@@ -28,7 +18,7 @@ function ProfileScreen(props) {
           source={require("../assets/me2.jpeg")}
           style={styles.myPicture}
         />
-        <TextH4>Poyao Wang</TextH4>
+        <TextH4>{data.name}</TextH4>
         {data.details.map((rowData, key) => (
           <React.Fragment key={key}>
             <Text style={styles.detailTitle}>{rowData.title}</Text>

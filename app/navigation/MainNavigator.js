@@ -12,11 +12,9 @@ function MainNavigator({ sourceData }) {
       <Stack.Screen name="Home" options={{ headerShown: false }}>
         {(props) => <HomeScreen {...props} sourceData={sourceData} />}
       </Stack.Screen>
-      <Stack.Screen
-        name="App"
-        component={AppNavigator}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="App" options={{ headerShown: false }}>
+        {(props) => <AppNavigator {...props} sourceData={sourceData} />}
+      </Stack.Screen>
     </Stack.Navigator>
   );
 }

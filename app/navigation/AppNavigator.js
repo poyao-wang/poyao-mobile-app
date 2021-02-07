@@ -11,7 +11,24 @@ import colors from "../config/colors";
 
 const Tab = createBottomTabNavigator();
 
-function AppNavigator() {
+const tabScreen = (name, iconName, component) => (
+  <Tab.Screen
+    name={name}
+    options={{
+      tabBarIcon: ({ color, size }) => (
+        <MaterialCommunityIcons //
+          name={iconName}
+          color={color}
+          size={size}
+        />
+      ),
+    }}
+  >
+    {component}
+  </Tab.Screen>
+);
+
+function AppNavigator({ sourceData }) {
   return (
     <Tab.Navigator
       tabBarOptions={{
@@ -19,19 +36,9 @@ function AppNavigator() {
         style: { height: 90 },
       }}
     >
-      <Tab.Screen
-        name="Profile"
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons //
-              name="account"
-              color={color}
-              size={size}
-            />
-          ),
-        }}
-        component={ProfileScreen}
-      />
+      {tabScreen("Profile", "account", (props) => (
+        <ProfileScreen {...props} sourceData={sourceData} />
+      ))}
       <Tab.Screen
         name="Experience"
         options={{
