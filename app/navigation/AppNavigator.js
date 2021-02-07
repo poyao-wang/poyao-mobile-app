@@ -11,10 +11,11 @@ import colors from "../config/colors";
 
 const Tab = createBottomTabNavigator();
 
-const tabScreen = (name, iconName, component) => (
+const tabScreen = (name, lableName, iconName, component) => (
   <Tab.Screen
     name={name}
     options={{
+      tabBarLabel: lableName,
       tabBarIcon: ({ color, size }) => (
         <MaterialCommunityIcons //
           name={iconName}
@@ -29,25 +30,26 @@ const tabScreen = (name, iconName, component) => (
 );
 
 function AppNavigator({ sourceData }) {
+  const data = sourceData.data.screens;
   return (
     <Tab.Navigator
       tabBarOptions={{
         activeTintColor: colors.primary,
       }}
     >
-      {tabScreen("Profile", "account", (props) => (
+      {tabScreen("Profile", data.profile, "account", (props) => (
         <ProfileScreen {...props} sourceData={sourceData} />
       ))}
-      {tabScreen("Experience", "bulletin-board", (props) => (
+      {tabScreen("Experience", data.experience, "bulletin-board", (props) => (
         <ExperienceScreen {...props} sourceData={sourceData} />
       ))}
-      {tabScreen("Ability", "school", (props) => (
+      {tabScreen("Ability", data.ability, "school", (props) => (
         <AbilityScreen {...props} sourceData={sourceData} />
       ))}
-      {tabScreen("Projects", "folder-multiple", (props) => (
+      {tabScreen("Projects", data.projects, "folder-multiple", (props) => (
         <ProjectsScreen {...props} sourceData={sourceData} />
       ))}
-      {tabScreen("Contact", "phone", (props) => (
+      {tabScreen("Contact", data.contact, "phone", (props) => (
         <ContactScreen {...props} sourceData={sourceData} />
       ))}
     </Tab.Navigator>

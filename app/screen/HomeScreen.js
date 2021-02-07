@@ -9,6 +9,8 @@ import TextH2 from "../components/TextH2";
 
 function HomeScreen({ navigation, sourceData }) {
   const data = sourceData.data.home;
+  const screenTitle = sourceData.data.screens.home;
+
   return (
     <View style={styles.container}>
       <TextH2 style={{ height: 80 }}>{data.title}</TextH2>
@@ -41,33 +43,33 @@ function HomeScreen({ navigation, sourceData }) {
           }}
         />
       </View>
-      <Animatable.View
-        animation="pulse"
-        duration={500}
-        iterationDelay={2000}
-        iterationCount="infinite"
+      <TouchableOpacity
         style={{
-          backgroundColor: colors.primary,
-          padding: 10,
-          paddingHorizontal: 25,
-          borderRadius: 10,
           margin: 10,
-          width: 220,
-          height: 50,
-          alignItems: "center",
-          justifyContent: "center",
+        }}
+        onPress={() => {
+          navigation.navigate("App");
         }}
       >
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate("App");
+        <Animatable.View
+          animation="pulse"
+          duration={500}
+          iterationDelay={2000}
+          iterationCount="infinite"
+          style={{
+            backgroundColor: colors.primary,
+            borderRadius: 10,
+            width: 220,
+            height: 50,
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <Text style={{ fontSize: 25, color: colors.white }}>
             {data.buttonTitle}
           </Text>
-        </TouchableOpacity>
-      </Animatable.View>
+        </Animatable.View>
+      </TouchableOpacity>
     </View>
   );
 }

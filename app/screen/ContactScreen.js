@@ -7,13 +7,15 @@ import IconForContact from "../components/IconForContact";
 
 function ContactScreen({ sourceData }) {
   const data = sourceData.data.contact;
+  const screenTitle = sourceData.data.screens.contact;
+
   const linkPress = (url) => {
     if (!url) return;
     Linking.openURL(url);
   };
 
   return (
-    <ScreenForApp mainTitle="Contact">
+    <ScreenForApp mainTitle={screenTitle}>
       <View style={styles.container}>
         <Text>{data.text1}</Text>
         <Text>{data.text2}</Text>

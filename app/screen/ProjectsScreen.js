@@ -5,8 +5,10 @@ import Screen from "../components/ScreenForApp";
 
 function ProjectsScreen({ sourceData }) {
   const data = sourceData.data.projects;
+  const screenTitle = sourceData.data.screens.projects;
+
   return (
-    <Screen mainTitle="Projects">
+    <Screen mainTitle={screenTitle}>
       <ProjectTable data={data.cards} />
     </Screen>
   );

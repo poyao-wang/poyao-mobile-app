@@ -1,5 +1,14 @@
 export default {
   eng: {
+    screens: {
+      home: "Home",
+      profile: "Profile",
+      experience: "Experience",
+      ability: "Ability",
+      projects: "Projects",
+      contact: "Contact",
+      settings: "Settings",
+    },
     home: {
       title: "Poyao  Wang",
       subTitle: "This is Poyao's mobile app",
@@ -179,7 +188,7 @@ export default {
             "This webpage is built by reactJS, combined with " +
             "Bootstrap, and deployed on Google Cloud.",
           btnLink: "https://github.com/BoyoWang/my-web-app",
-          btnText: "Github",
+          btnText: "Github Link",
         },
         {
           imgSrc: "https://boyo-web-app.appspot.com/assets/Project2.jpg",
@@ -188,7 +197,7 @@ export default {
             "A motor controller, built on Raspberry Pi, " +
             "coding in Python, using Tkinter as GUI.",
           btnLink: "https://github.com/BoyoWang/control-box",
-          btnText: "Github",
+          btnText: "Github Link",
         },
       ],
     },
@@ -228,6 +237,15 @@ export default {
     },
   },
   cht: {
+    screens: {
+      home: "首　頁",
+      profile: "個人資料",
+      experience: "履　歷",
+      ability: "能　力",
+      projects: "作　品",
+      contact: "聯絡方式",
+      settings: "設　定",
+    },
     home: {
       title: "王 柏 堯",
       subTitle: "這是王柏堯的個人App",
@@ -452,6 +470,15 @@ export default {
     },
   },
   jpn: {
+    screens: {
+      home: "ホーム",
+      profile: "プロフィール",
+      experience: "履　歴",
+      ability: "能　力",
+      projects: "作　品",
+      contact: "連絡先",
+      settings: "設　定",
+    },
     home: {
       title: "ワン ポヤオ",
       subTitle: "ワンポヤオのモバイルアプリ",

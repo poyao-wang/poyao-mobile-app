@@ -8,9 +8,10 @@ import TextH4 from "../components/TextH4";
 
 function ProfileScreen({ sourceData }) {
   const data = sourceData.data.profile;
+  const screenTitle = sourceData.data.screens.profile;
 
   return (
-    <ScreenForApp mainTitle="Profile">
+    <ScreenForApp mainTitle={screenTitle}>
       <View style={styles.content}>
         <TextH5 style={styles.oneLineMsg}>{data.oneLineMsg}</TextH5>
         <Text style={styles.aboutMe}>{data.aboutMe}</Text>

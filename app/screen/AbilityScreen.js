@@ -6,8 +6,9 @@ import Screen from "../components/ScreenForApp";
 
 function AbilityScreen({ sourceData }) {
   const data = sourceData.data.ability;
+  const screenTitle = sourceData.data.screens.ability;
   return (
-    <Screen mainTitle="Ability">
+    <Screen mainTitle={screenTitle}>
       <View style={styles.container}>
         <AbilityTable title={data.skills.title} data={data.skills.data} />
         <View style={styles.margin} />
