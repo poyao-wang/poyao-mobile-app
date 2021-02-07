@@ -2,7 +2,7 @@ export default {
   eng: {
     home: {
       title: "Poyao  Wang",
-      subTitle: "This is the mobile app of Poyao.",
+      subTitle: "This is Poyao's mobile app",
       buttonTitle: "WELCOME",
     },
     profile: {
@@ -188,6 +188,40 @@ export default {
           btnText: "Github",
         },
       ],
+    },
+    contact: {
+      text1: "Interested in my work?",
+      text2: "Feel free to contact me.",
+      linkedin: {
+        iconName: "linkedin",
+        iconText: "LinkedIn",
+        linkContent: "https://www.linkedin.com/in/poyao-wang-33860058/",
+      },
+      github: {
+        iconName: "github",
+        iconText: "GitHub",
+        linkContent: "https://github.com/poyao-wang",
+      },
+      email: {
+        iconName: "email",
+        iconText: "Email",
+        linkContent: "mailto:michael90110@gmail.com",
+      },
+      website: {
+        iconName: "web",
+        iconText: "Website",
+        linkContent: "https://boyo-web-app.appspot.com/",
+      },
+      ios: {
+        iconName: "apple",
+        iconText: "iOS App",
+        linkContent: "",
+      },
+      android: {
+        iconName: "android",
+        iconText: "Android App",
+        linkContent: "",
+      },
     },
   },
   cht: {
@@ -376,10 +410,44 @@ export default {
         },
       ],
     },
+    contact: {
+      text1: "對於我的作品有興趣嗎？",
+      text2: "歡迎隨時與我聯繫。",
+      linkedin: {
+        iconName: "linkedin",
+        iconText: "LinkedIn",
+        linkContent: "https://www.linkedin.com/in/poyao-wang-33860058/",
+      },
+      github: {
+        iconName: "github",
+        iconText: "GitHub",
+        linkContent: "https://github.com/poyao-wang",
+      },
+      email: {
+        iconName: "email",
+        iconText: "Email",
+        linkContent: "mailto:michael90110@gmail.com",
+      },
+      website: {
+        iconName: "web",
+        iconText: "Website",
+        linkContent: "https://boyo-web-app.appspot.com/",
+      },
+      ios: {
+        iconName: "apple",
+        iconText: "iOS App",
+        linkContent: "",
+      },
+      android: {
+        iconName: "android",
+        iconText: "Android App",
+        linkContent: "",
+      },
+    },
   },
   jpn: {
     home: {
-      title: "ワン　ポヤオ",
+      title: "ワン ポヤオ",
       subTitle: "ワンポヤオのモバイルアプリ",
       buttonTitle: "ようこそ",
     },
@@ -568,6 +636,40 @@ export default {
           btnText: "Github リンク",
         },
       ],
+    },
+    contact: {
+      text1: "私の作品に興味があります？",
+      text2: "お気軽にご連絡ください。",
+      linkedin: {
+        iconName: "linkedin",
+        iconText: "LinkedIn",
+        linkContent: "https://www.linkedin.com/in/poyao-wang-33860058/",
+      },
+      github: {
+        iconName: "github",
+        iconText: "GitHub",
+        linkContent: "https://github.com/poyao-wang",
+      },
+      email: {
+        iconName: "email",
+        iconText: "Email",
+        linkContent: "mailto:michael90110@gmail.com",
+      },
+      website: {
+        iconName: "web",
+        iconText: "Website",
+        linkContent: "https://boyo-web-app.appspot.com/",
+      },
+      ios: {
+        iconName: "apple",
+        iconText: "iOS App",
+        linkContent: "",
+      },
+      android: {
+        iconName: "android",
+        iconText: "Android App",
+        linkContent: "",
+      },
     },
   },
 };

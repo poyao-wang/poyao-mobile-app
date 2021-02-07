@@ -47,19 +47,9 @@ function AppNavigator({ sourceData }) {
       {tabScreen("Projects", "folder-multiple", (props) => (
         <ProjectsScreen {...props} sourceData={sourceData} />
       ))}
-      <Tab.Screen
-        name="Contact"
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons //
-              name="phone"
-              color={color}
-              size={size}
-            />
-          ),
-        }}
-        component={ContactScreen}
-      />
+      {tabScreen("Contact", "phone", (props) => (
+        <ContactScreen {...props} sourceData={sourceData} />
+      ))}
     </Tab.Navigator>
   );
 }
