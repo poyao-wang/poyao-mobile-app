@@ -4,6 +4,9 @@ export default {
       title: "Poyao  Wang",
       subTitle: "This is Poyao's mobile app",
       buttonTitle: "WELCOME",
+      btnTextEng: "English",
+      btnTextCht: "Chinese",
+      btnTextJpn: "Japanese",
     },
     profile: {
       oneLineMsg: "A Self-Taught Programmer",
@@ -229,6 +232,9 @@ export default {
       title: "王 柏 堯",
       subTitle: "這是王柏堯的個人App",
       buttonTitle: "歡　迎",
+      btnTextEng: "英　文",
+      btnTextCht: "中　文",
+      btnTextJpn: "日　文",
     },
     profile: {
       oneLineMsg: "自學程式設計師",
@@ -450,6 +456,9 @@ export default {
       title: "ワン ポヤオ",
       subTitle: "ワンポヤオのモバイルアプリ",
       buttonTitle: "ようこそ",
+      btnTextEng: "英　語",
+      btnTextCht: "中国語",
+      btnTextJpn: "日本語",
     },
     profile: {
       oneLineMsg: "独学プログラマー",

@@ -17,7 +17,7 @@ function HomeScreen({ navigation, sourceData }) {
       </Text>
       <View style={{ flexDirection: "row" }}>
         <IconForLanguage
-          textBelow="English"
+          textBelow={data.btnTextEng}
           icnoName="alpha-e-box"
           color={colors.medium}
           onPress={() => {
@@ -25,7 +25,7 @@ function HomeScreen({ navigation, sourceData }) {
           }}
         />
         <IconForLanguage
-          textBelow="Chinese"
+          textBelow={data.btnTextCht}
           icnoName="alpha-c-box"
           color={colors.medium}
           onPress={() => {
@@ -33,7 +33,7 @@ function HomeScreen({ navigation, sourceData }) {
           }}
         />
         <IconForLanguage
-          textBelow="Japanese"
+          textBelow={data.btnTextJpn}
           icnoName="alpha-j-box"
           color={colors.medium}
           onPress={() => {
