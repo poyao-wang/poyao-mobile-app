@@ -33,7 +33,6 @@ function AppNavigator({ sourceData }) {
     <Tab.Navigator
       tabBarOptions={{
         activeTintColor: colors.primary,
-        style: { height: 90 },
       }}
     >
       {tabScreen("Profile", "account", (props) => (

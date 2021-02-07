@@ -3,7 +3,7 @@ export default {
     home: {
       title: "Poyao  Wang",
       subTitle: "This is the mobile app of Poyao.",
-      buttonTitle: "E N T E R",
+      buttonTitle: "WELCOME",
     },
     profile: {
       oneLineMsg: "A Self-Taught Programmer",
@@ -194,11 +194,12 @@ export default {
     home: {
       title: "王 柏 堯",
       subTitle: "這是王柏堯的個人App",
-      buttonTitle: "E N T E R",
+      buttonTitle: "歡　迎",
     },
     profile: {
       oneLineMsg: "自學程式設計師",
-      aboutMe: "我是機械工程師。目前在汽車產業就職。我從2019年開始自學程式設計",
+      aboutMe:
+        "我是機械工程師。目前在汽車產業就職。我從2019年開始自學程式設計。",
       name: "王 柏 堯",
       details: [
         { title: "年齡 :", content: "33 歲" },
@@ -380,12 +381,12 @@ export default {
     home: {
       title: "ワン　ポヤオ",
       subTitle: "ワンポヤオのモバイルアプリ",
-      buttonTitle: "E N T E R",
+      buttonTitle: "ようこそ",
     },
     profile: {
       oneLineMsg: "独学プログラマー",
       aboutMe:
-        "現職は自動車産業の機械エンジニア。2019年からプログラミングの学習を始めた。",
+        "現職は自動車産業の機械エンジニア。2019年からプログラミングを習い始めた。",
       name: "ワン　ポヤオ",
       details: [
         { title: "年齢 :", content: "33 歳" },

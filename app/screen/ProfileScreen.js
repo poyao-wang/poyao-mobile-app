@@ -13,7 +13,7 @@ function ProfileScreen({ sourceData }) {
     <ScreenForApp mainTitle="Profile">
       <View style={styles.content}>
         <TextH5 style={styles.oneLineMsg}>{data.oneLineMsg}</TextH5>
-        <Text>{data.aboutMe}</Text>
+        <Text style={styles.aboutMe}>{data.aboutMe}</Text>
         <Image
           source={require("../assets/me2.jpeg")}
           style={styles.myPicture}
@@ -31,6 +31,9 @@ function ProfileScreen({ sourceData }) {
 }
 
 const styles = StyleSheet.create({
+  aboutMe: {
+    textAlign: "center",
+  },
   content: {
     alignItems: "center",
   },
@@ -44,9 +47,10 @@ const styles = StyleSheet.create({
     marginVertical: 25,
     width: 200,
   },
-
   oneLineMsg: {
     marginBottom: 7,
+    fontSize: 25,
+    textAlign: "center",
   },
 });
 

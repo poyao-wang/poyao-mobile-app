@@ -11,8 +11,10 @@ function HomeScreen({ navigation, sourceData }) {
   const data = sourceData.data.home;
   return (
     <View style={styles.container}>
-      <TextH2>{data.title}</TextH2>
-      <Text style={{ fontSize: 20, margin: 10 }}>{data.subTitle}</Text>
+      <TextH2 style={{ height: 80 }}>{data.title}</TextH2>
+      <Text style={{ height: 40, fontSize: 20, margin: 10 }}>
+        {data.subTitle}
+      </Text>
       <View style={{ flexDirection: "row" }}>
         <IconForLanguage
           textBelow="English"
@@ -50,6 +52,10 @@ function HomeScreen({ navigation, sourceData }) {
           paddingHorizontal: 25,
           borderRadius: 10,
           margin: 10,
+          width: 220,
+          height: 50,
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <TouchableOpacity
