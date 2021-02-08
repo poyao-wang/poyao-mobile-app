@@ -8,7 +8,7 @@ function ExperienceScreen({ sourceData }) {
   const screenTitle = sourceData.data.screens.experience;
 
   return (
-    <ScreenForApp mainTitle={screenTitle}>
+    <ScreenForApp mainTitle={screenTitle} sourceData={sourceData}>
       <ExpTable title={data.careers.title} data={data.careers.data} />
       <ExpTable title={data.educations.title} data={data.educations.data} />
     </ScreenForApp>

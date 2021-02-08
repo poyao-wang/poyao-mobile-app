@@ -8,7 +8,7 @@ function ProjectsScreen({ sourceData }) {
   const screenTitle = sourceData.data.screens.projects;
 
   return (
-    <Screen mainTitle={screenTitle}>
+    <Screen mainTitle={screenTitle} sourceData={sourceData}>
       <ProjectTable data={data.cards} />
     </Screen>
   );

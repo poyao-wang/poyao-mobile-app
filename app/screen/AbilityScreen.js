@@ -8,7 +8,7 @@ function AbilityScreen({ sourceData }) {
   const data = sourceData.data.ability;
   const screenTitle = sourceData.data.screens.ability;
   return (
-    <Screen mainTitle={screenTitle}>
+    <Screen mainTitle={screenTitle} sourceData={sourceData}>
       <View style={styles.container}>
         <AbilityTable title={data.skills.title} data={data.skills.data} />
         <View style={styles.margin} />

@@ -15,7 +15,7 @@ function ContactScreen({ sourceData }) {
   };
 
   return (
-    <ScreenForApp mainTitle={screenTitle}>
+    <ScreenForApp mainTitle={screenTitle} sourceData={sourceData}>
       <View style={styles.container}>
         <Text>{data.text1}</Text>
         <Text>{data.text2}</Text>

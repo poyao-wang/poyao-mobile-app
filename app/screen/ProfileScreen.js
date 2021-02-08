@@ -11,7 +11,7 @@ function ProfileScreen({ sourceData }) {
   const screenTitle = sourceData.data.screens.profile;
 
   return (
-    <ScreenForApp mainTitle={screenTitle}>
+    <ScreenForApp mainTitle={screenTitle} sourceData={sourceData}>
       <View style={styles.content}>
         <TextH5 style={styles.oneLineMsg}>{data.oneLineMsg}</TextH5>
         <Text style={styles.aboutMe}>{data.aboutMe}</Text>

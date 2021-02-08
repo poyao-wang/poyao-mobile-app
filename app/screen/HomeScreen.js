@@ -48,6 +48,7 @@ function HomeScreen({ navigation, sourceData }) {
           margin: 10,
         }}
         onPress={() => {
+          sourceData.setLanguage(sourceData.language);
           navigation.navigate("App");
         }}
       >
