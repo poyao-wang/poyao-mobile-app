@@ -70,6 +70,7 @@ function ContactScreen({ sourceData }) {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 15,
     alignItems: "center",
     width: "100%",
   },
