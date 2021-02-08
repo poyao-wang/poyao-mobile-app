@@ -1,4 +1,3 @@
-import { Alert } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import React, { useEffect, useState } from "react";
 
@@ -16,8 +15,12 @@ export default function App() {
     setSourceData(originalData[languageCode]);
   };
 
-  const update = async (successAlertShow) => {
-    const newData = await data.update(successAlertShow);
+  const update = async (successAlertShow, messageSuccess, messageFailed) => {
+    const newData = await data.update(
+      successAlertShow,
+      messageSuccess,
+      messageFailed
+    );
     setOriginalData(newData);
     setLanguageAndData(language);
   };

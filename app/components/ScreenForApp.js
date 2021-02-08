@@ -23,8 +23,15 @@ const topIcon = (iconName, onPress) => (
 );
 
 function ScreenForApp({ mainTitle, children, sourceData }) {
+  const msgUpdateSuccess = sourceData.data.settings
+    ? sourceData.data.settings.msgUpdateSuccess
+    : "Data update success.";
+  const msgUpdateFailed = sourceData.data.settings
+    ? sourceData.data.settings.msgUpdateFailed
+    : "Data update failed.";
+
   const updateAndNavigateHome = () => {
-    sourceData.dataUpdate(true);
+    sourceData.dataUpdate(true, msgUpdateSuccess, msgUpdateFailed);
     navigation.navigate("Home");
   };
 

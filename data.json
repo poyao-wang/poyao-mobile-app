@@ -321,6 +321,10 @@
         "iconText": "Android App",
         "linkContent": ""
       }
+    },
+    "settings": {
+      "msgUpdateSuccess": "Data update success.",
+      "msgUpdateFailed": "Data update failed."
     }
   },
   "cht": {
@@ -640,6 +644,10 @@
         "iconText": "Android App",
         "linkContent": ""
       }
+    },
+    "settings": {
+      "msgUpdateSuccess": "更新成功。",
+      "msgUpdateFailed": "更新失敗。"
     }
   },
   "jpn": {
@@ -959,6 +967,10 @@
         "iconText": "Android App",
         "linkContent": ""
       }
+    },
+    "settings": {
+      "msgUpdateSuccess": "アップデート成功。",
+      "msgUpdateFailed": "アップデート失敗。"
     }
   }
 }
